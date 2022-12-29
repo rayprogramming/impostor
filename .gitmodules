@@ -1,0 +1,3 @@
+[submodule "modules/impostor-server"]
+	path = modules/impostor-server
+	url = git@github.com:rayprogramming/terraform-aws-impostor-server.git
