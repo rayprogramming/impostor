@@ -15,6 +15,13 @@ terraform {
 # Configure the AWS Provider
 provider "aws" {
   region = "us-east-1"
+  default_tags {
+    tags = {
+      Project   = "Impostor"
+      CreatedBy = "rayprogramming/Impostor"
+      ManagedBy = "Terraform"
+    }
+  }
 }
 
 data "aws_caller_identity" "current" {}
