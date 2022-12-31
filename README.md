@@ -18,11 +18,13 @@ A terraform setup to host an [Impostor server](https://github.com/Impostor/Impos
 | Name | Source | Version |
 |------|--------|---------|
 | <a name="module_impostor_server"></a> [impostor\_server](#module\_impostor\_server) | ./modules/impostor-server | n/a |
+| <a name="module_vpc"></a> [vpc](#module\_vpc) | terraform-aws-modules/vpc/aws | n/a |
 
 ## Resources
 
 | Name | Type |
 |------|------|
+| [aws_availability_zones.available](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/availability_zones) | data source |
 | [aws_caller_identity.current](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/caller_identity) | data source |
 
 ## Inputs
