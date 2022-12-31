@@ -28,6 +28,6 @@ data "aws_caller_identity" "current" {}
 
 # Include the impostor server setup
 module "impostor_server" {
-  source = "./modules/impostor-server"
+  source          = "./modules/impostor-server"
   instance_subnet = "subnet-fcd8b09b" //TODO make resource
 }
