@@ -26,8 +26,18 @@ provider "aws" {
 
 data "aws_caller_identity" "current" {}
 
+data "aws_route53_zone" "selected" {
+  name = "iocafg.com."
+}
+
+
 # Include the impostor server setup
 module "impostor_server" {
-  source          = "./modules/impostor-server"
-  instance_subnet = "subnet-fcd8b09b" //TODO make resource
+  source             = "./modules/impostor-server"
+  private_key        = "~/.ssh/amongus.pem"
+  zone_id            = data.aws_route53_zone.selected.id
+  instance_subnet    = module.vpc.private_subnets[0]
+  gameserver_subnets = [module.vpc.public_subnets]
+  matchmaker_subnets = [module.vpc.public_subnets]
+  instance_key_name  = "amongus"
 }
