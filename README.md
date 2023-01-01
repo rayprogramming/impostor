@@ -19,6 +19,7 @@ A terraform setup to host an [Impostor server](https://github.com/Impostor/Impos
 |------|--------|---------|
 | <a name="module_impostor_server"></a> [impostor\_server](#module\_impostor\_server) | ./modules/impostor-server | n/a |
 | <a name="module_vpc"></a> [vpc](#module\_vpc) | terraform-aws-modules/vpc/aws | n/a |
+| <a name="module_vpn"></a> [vpn](#module\_vpn) | ./modules/vpn | n/a |
 
 ## Resources
 
