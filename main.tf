@@ -43,3 +43,10 @@ module "impostor_server" {
   matchmaker_subnets = module.vpc.public_subnets
   instance_key_name  = "amongus"
 }
+
+module "vpn" {
+  source = "./modules/vpn"
+  server_password = var.vpn_password
+  server_region = "us-east-2"
+  server_username = var.vpn_username
+}

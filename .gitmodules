@@ -1,3 +1,6 @@
 [submodule "modules/impostor-server"]
 	path = modules/impostor-server
 	url = git@github.com:rayprogramming/terraform-aws-impostor-server.git
+[submodule "modules/vpn"]
+	path = modules/vpn
+	url = git@github.com:rayprogramming/terraform-aws-openvpn.git
