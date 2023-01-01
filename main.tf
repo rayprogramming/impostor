@@ -2,7 +2,7 @@ terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "~> 3.0"
+      version = "~> 4.0"
     }
   }
   backend "s3" {
@@ -49,4 +49,7 @@ module "vpn" {
   server_password = var.vpn_password
   server_region = "us-east-2"
   server_username = var.vpn_username
+  vpc_id             = module.vpc.vpc_id
+  instance_availability_zone = module.vpc.azs[0]
+  instance_subnet    = module.vpc.private_subnets[0]
 }
