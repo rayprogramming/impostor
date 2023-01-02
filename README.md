@@ -38,5 +38,7 @@ A terraform setup to host an [Impostor server](https://github.com/Impostor/Impos
 
 ## Outputs
 
-No outputs.
+| Name | Description |
+|------|-------------|
+| <a name="output_vpn"></a> [vpn](#output\_vpn) | n/a |
 <!-- END_TF_DOCS -->
