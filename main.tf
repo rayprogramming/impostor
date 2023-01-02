@@ -51,5 +51,5 @@ module "vpn" {
   server_username = var.vpn_username
   vpc_id             = module.vpc.vpc_id
   instance_availability_zone = module.vpc.azs[0]
-  instance_subnet    = module.vpc.private_subnets[0]
+  instance_subnet    = module.vpc.public_subnets[0]
 }
