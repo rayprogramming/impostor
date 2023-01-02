@@ -5,13 +5,13 @@ A terraform setup to host an [Impostor server](https://github.com/Impostor/Impos
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_aws"></a> [aws](#requirement\_aws) | ~> 3.0 |
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | ~> 4.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | 3.76.0 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | 4.48.0 |
 
 ## Modules
 
@@ -31,7 +31,10 @@ A terraform setup to host an [Impostor server](https://github.com/Impostor/Impos
 
 ## Inputs
 
-No inputs.
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|:--------:|
+| <a name="input_vpn_password"></a> [vpn\_password](#input\_vpn\_password) | Admin Password to access server | `string` | n/a | yes |
+| <a name="input_vpn_username"></a> [vpn\_username](#input\_vpn\_username) | Admin Username to access server | `string` | n/a | yes |
 
 ## Outputs
 
